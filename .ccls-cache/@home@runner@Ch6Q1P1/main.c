@@ -1,6 +1,17 @@
+// Program to calculate the absolute value of an integer
+
 #include <stdio.h>
 
 int main(void) {
-  printf("Hello World\n");
+  int number;
+
+  printf ("Type in your number: ");
+  scanf ("%i",&number);
+
+  if (number <0)
+    number = -number;
+
+  printf ("The abosulute value is %i\n", number);
+  
   return 0;
 }
